@@ -1,3 +1,47 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Botões e hover: #FF00BF */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: grid;
+  height: 600px;
+  background-image: url("../assets/images/hero.gif");
+  background-repeat: no-repeat;
+  outline: 1px solid red;
+}
+
+#logoWhite {
+
+}
+
+form {
+  /* Título do formulário: #352384
+Texto do formulário: #728099 */
+}
+
+.banner {
+  background-color: linear-gradient(#76278F, #2B1E66);
+}
+
+footer {
+  background-color: #333447;
+}
