@@ -22,24 +22,54 @@ html, body {
 }
 
 header {
-  display: grid;
-  height: 600px;
-  background-image: url("../assets/images/hero.gif");
+  display: flex;
+  height: 550px;
+  background-image: url("../assets/images/hero.gif"), linear-gradient(to left, #76278F, #2B1E66);
   background-repeat: no-repeat;
-  outline: 1px solid red;
+  background-size: cover;
+  background-position: 0px -93px;
 }
 
 #logoWhite {
 
 }
 
-form {
-  /* Título do formulário: #352384
-Texto do formulário: #728099 */
+form h1, form h2 {
+  color: #352384;
+}
+
+form p {
+  color: #728099;
 }
 
 .banner {
-  background-color: linear-gradient(#76278F, #2B1E66);
+  display: flex;
+  /* grid-gap: 80px; */
+  height: 650px;
+  width: 100%;
+  background-image: linear-gradient(#76278F, #2B1E66);
+}
+
+.bannerText {
+  /* padding-top: 85px; */
+  padding-left: 50px
+  outline: 1px solid black;
+}
+
+.bannerImage {
+  /* padding: 87px; */
+}
+
+.firstWatch {
+  display: flex;
+}
+
+.secondWatch {
+  display: flex;
+}
+
+.thirdWatch {
+  display: flex;
 }
 
 footer {
