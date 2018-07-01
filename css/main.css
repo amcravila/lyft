@@ -23,11 +23,37 @@ html, body {
 
 header {
   display: flex;
-  height: 550px;
-  background-image: url("../assets/images/hero.gif"), linear-gradient(to left, #76278F, #2B1E66);
+  height: 650px;
+  background-image: url("../assets/images/hero.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -93px;
+}
+
+header:before {
+  content: '';
+	position: absolute;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  background-image: linear-gradient(to bottom, transparent 40%, #76278F 100%);
+  background-position: 0px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 90px;
+  width: 100%;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  color: white;
+  list-style: none;
 }
 
 #logoWhite {
@@ -44,34 +70,61 @@ form p {
 
 .banner {
   display: flex;
-  /* grid-gap: 80px; */
-  height: 650px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 550px;
   width: 100%;
   background-image: linear-gradient(#76278F, #2B1E66);
 }
 
 .bannerText {
-  /* padding-top: 85px; */
-  padding-left: 50px
-  outline: 1px solid black;
+  color: white;
 }
 
 .bannerImage {
-  /* padding: 87px; */
+
 }
 
 .firstWatch {
   display: flex;
+  height: 507px;
+}
+
+.firstWatch .text {
+  text-align: left;
+  width: 32.5%;
+}
+
+.firstWatch .text p {
+  font-size: 16px;
 }
 
 .secondWatch {
   display: flex;
+  height: 505px;
+}
+
+.secondWatch .text {
+  display: flex;
+  justify-content: flex-end;
+  width: 300%;
 }
 
 .thirdWatch {
   display: flex;
+  height: 490px;
+}
+
+.thirdWatch .text {
+  width: 32.5%;
 }
 
 footer {
   background-color: #333447;
+  height: 500px;
+  width: 100%;
 }
+
+/* :hover {
+  color: #FF00BF;
+} */
