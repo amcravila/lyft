@@ -19,11 +19,11 @@ html, body {
 
 header {
   display: flex;
-  height: 641px;
+  height: 642px;
   background-image: url("../assets/images/hero.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -93px;
+  background-position: 0px -94px;
 }
 
 header:before {
@@ -63,7 +63,9 @@ nav img {
   display: flex;
   text-decoration: none;
   color: white;
-  padding: 14px;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
 .loginButton {
@@ -71,21 +73,23 @@ nav img {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 8px 15px;
-  margin-left: 14px;
+  padding: 8px 14px;
+  margin-left: 13px;
+  font-size: 17px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 537px;
-  height: 398px;
+  width: 539px;
+  height: 400px;
   background-color: white;
-  margin-top: 130px;
+  margin-top: 127.5px;
   position: absolute;
   right: 0;
-  padding: 52px 51px;
+  padding: 52px 53px;
+  font-weight: 400;
 }
 
 form h1 {
@@ -99,8 +103,8 @@ form h2 {
   color: #352384;
   font-size: 21px;
   font-weight: 900;
-  word-spacing: -1px;
-  line-height: 23px;
+  word-spacing: -3px;
+  line-height: 32px;
 }
 
 form h3 {
@@ -112,31 +116,33 @@ form h3 {
 
 #phone {
   border: none;
+  color: #728099;
   width: 400px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  border-bottom: 1px solid #352384;
-  margin-top: 10px;
-  padding-bottom: 4px;
+  font-size: 15px;
+  border-bottom: 1px solid #728099;
+  margin-top: 1px;
+  padding-bottom: 6px;
 }
 
 #buttonBecome {
-  font-size: 19px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   background-color: #FF00BF;
   border-radius: 5px;
   border-style: none;
-  font-size: 14px;
+  font-size: 14.5px;
   color: white;
   width: 160px;
   height: 40px;
-  padding-left: 2px;
-  margin-top: 22px;
+  padding-left: 9px;
+  margin-top: 20px;
   margin-bottom: 16px;
 }
 
 form a {
   margin-left: 23px;
+  word-spacing: 1px;
 }
 
 .banner {
@@ -148,23 +154,26 @@ form a {
 }
 
 .bannerText {
-  width: 437px;
-  margin-right: 117px;
+  width: 443px;
+  margin-right: 112px;
 }
 
 .bannerText h2 {
   color: white;
   font-weight: 700;
-  font-size: 25px;
-  word-spacing: 2px;
+  font-size: 26px;
+  word-spacing: -2px;
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 21px;
+  margin-top: 19px;
+  margin-bottom: 23px;
+  margin-left: 3px;
 }
 
 #secondH2, #thirdH2 {
   margin-top: 30px;
   letter-spacing: 0.5px;
+  word-spacing: -4px;
+  margin-left: -1px;
 }
 
 .bannerText p {
@@ -172,23 +181,42 @@ form a {
   font-size: 15px;
   word-spacing: -1px;
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 22px;
+  line-height: 20px;
+}
+
+.bannerImage {
+  margin-top: -2px;
+  margin-left: 5px;
 }
 
 .firstWatch {
   display: flex;
+  justify-content: center;
   height: 507px;
+}
+
+.firstWatch h3, .secondWatch h3, .thirdWatch h3  {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.firstWatch h2, .secondWatch h2, .thirdWatch h2 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .firstWatch .text {
   text-align: left;
+  padding-top: 35px;
+  padding-left: 43px;
   width: 33%;
 }
 
-.firstWatch .text p {
-  font-size: 16px;
+.firstWatch .text p, .secondWatch .text p {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .secondWatch {
@@ -197,8 +225,8 @@ form a {
 }
 
 .secondWatch .text {
-  display: flex;
-  justify-content: flex-end;
+  padding: 35px 41px;
+  margin-right: 0px;
   width: 300%;
 }
 
@@ -208,7 +236,18 @@ form a {
 }
 
 .thirdWatch .text {
+  text-align: left;
+  font-size: 17px;
+  line-height: 23px;
+  padding: 33px 43px;
   width: 33%;
+}
+
+.thirdWatch .text p {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-top: 6px;
 }
 
 footer {
@@ -285,5 +324,5 @@ footer h6 {
   text-align: center;
   color: white;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
