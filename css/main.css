@@ -97,16 +97,17 @@ form h1 {
 
 form h2 {
   color: #352384;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 900;
-  word-spacing: 2px;
+  word-spacing: -1px;
   line-height: 23px;
 }
 
 form h3 {
   color: #728099;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 20px;
+  margin-bottom: -4px;
 }
 
 #phone {
@@ -141,30 +142,39 @@ form a {
 .banner {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 550px;
+  height: 556px;
   width: 100%;
   background-image: linear-gradient(#76278F, #2B1E66);
-  padding: 0px 159px;
 }
 
 .bannerText {
-  width: 439px;
-  line-height: 28px;
-  margin-right: 115px;
+  width: 437px;
+  margin-right: 117px;
 }
 
 .bannerText h2 {
   color: white;
   font-weight: 700;
-  font-size: 24px;
-  word-spacing: 4px;
+  font-size: 25px;
+  word-spacing: 2px;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 21px;
+}
+
+#secondH2, #thirdH2 {
+  margin-top: 30px;
+  letter-spacing: 0.5px;
 }
 
 .bannerText p {
   color: white;
-  font-size: 16px;
-  word-spacing: -4px;
+  font-size: 15px;
+  word-spacing: -1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 22px;
 }
 
 .firstWatch {
@@ -194,7 +204,7 @@ form a {
 
 .thirdWatch {
   display: flex;
-  height: 490px;
+  height: 508px;
 }
 
 .thirdWatch .text {
@@ -203,23 +213,39 @@ form a {
 
 footer {
   background-color: #333447;
-  height: 500px;
+  height: 520px;
   width: 100%;
 }
 
 footer .footerColumns {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 82%;
+  padding-top: 31px;
+  margin-left: 64px;
+  line-height: 51px;
+  font-size: 18px;
+  letter-spacing: -1px;
 }
 
 footer ul {
   list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-footer .none {
+footer .column, footer .items {
   text-decoration: none;
   color: white;
+}
+
+footer .items {
+  font-size: 16px;
+}
+
+footer .items:hover {
+  color: #FF00BF;
 }
 
 .downloadIcons {
@@ -227,10 +253,37 @@ footer .none {
   flex-direction: column;
 }
 
-.socialIcons {
-  text-align: center;
+.downloadIcons img {
+  padding-left: 6px;
+  margin-bottom: 2px;
+  margin-top: 32.5px;
 }
 
-/* :hover {
-  color: #FF00BF;
-} */
+.socialIcons {
+  text-align: center;
+  color: white;
+  margin-left: 44px;
+  margin-top: 31px;
+  margin-bottom: 20px;
+}
+
+.socialIcons i {
+  padding-right: 45px;
+}
+
+.flaticon-facebook::before, .flaticon-instagram::before, .flaticon-twitter::before {
+  font-size: 30px!important;
+  margin: 6px!important;
+}
+
+footer hr {
+  width: 820px;
+  border-top: 0.5px solid white;
+}
+
+footer h6 {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+}
