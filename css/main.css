@@ -10,20 +10,16 @@
   box-sizing: border-box;
 }
 
-
-/* Botões e hover: #FF00BF */
-
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
 header {
   display: flex;
-  height: 650px;
+  height: 641px;
   background-image: url("../assets/images/hero.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,39 +29,113 @@ header {
 header:before {
   content: '';
 	position: absolute;
-	top: 0px;
+	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
   background-image: linear-gradient(to bottom, transparent 40%, #76278F 100%);
-  background-position: 0px 0px;
+  background-position: 0px -10px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  height: 90px;
-  width: 100%;
   align-items: center;
+  justify-content: flex-end;
+  height: 83px;
+  width: 100%;
 }
 
-header ul {
+nav ul {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: white;
   list-style: none;
+  padding-right: 160px;
+  width: 100%;
 }
 
-#logoWhite {
-
+nav img {
+  margin-left: 66px;
 }
 
-form h1, form h2 {
+.menu {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+}
+
+.loginButton {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-left: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 537px;
+  height: 398px;
+  background-color: white;
+  margin-top: 130px;
+  position: absolute;
+  right: 0;
+  padding: 52px 51px;
+}
+
+form h1 {
   color: #352384;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 0px;
 }
 
-form p {
+form h2 {
+  color: #352384;
+  font-size: 20px;
+  font-weight: 900;
+  word-spacing: 2px;
+  line-height: 23px;
+}
+
+form h3 {
   color: #728099;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#phone {
+  border: none;
+  width: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-bottom: 1px solid #352384;
+  margin-top: 10px;
+  padding-bottom: 4px;
+}
+
+#buttonBecome {
+  font-size: 19px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FF00BF;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 14px;
+  color: white;
+  width: 160px;
+  height: 40px;
+  padding-left: 2px;
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+
+form a {
+  margin-left: 23px;
 }
 
 .banner {
@@ -75,14 +145,26 @@ form p {
   height: 550px;
   width: 100%;
   background-image: linear-gradient(#76278F, #2B1E66);
+  padding: 0px 159px;
 }
 
 .bannerText {
-  color: white;
+  width: 439px;
+  line-height: 28px;
+  margin-right: 115px;
 }
 
-.bannerImage {
+.bannerText h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  word-spacing: 4px;
+}
 
+.bannerText p {
+  color: white;
+  font-size: 16px;
+  word-spacing: -4px;
 }
 
 .firstWatch {
@@ -92,7 +174,7 @@ form p {
 
 .firstWatch .text {
   text-align: left;
-  width: 32.5%;
+  width: 33%;
 }
 
 .firstWatch .text p {
@@ -116,13 +198,37 @@ form p {
 }
 
 .thirdWatch .text {
-  width: 32.5%;
+  width: 33%;
 }
 
 footer {
   background-color: #333447;
   height: 500px;
   width: 100%;
+}
+
+footer .footerColumns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .none {
+  text-decoration: none;
+  color: white;
+}
+
+.downloadIcons {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialIcons {
+  text-align: center;
 }
 
 /* :hover {
